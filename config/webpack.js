@@ -1,11 +1,15 @@
 module.exports = {
-    entry: "./client.js",
+    watch: true,
+    entry: './client.js',
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     output: {
-        filename: "./build/client.js"
+        filename: './build/client.js'
     },
     module: {
         loaders: [
-            { test: /\.jsx$/, loader: "jsx-loader" }
+            { test: /\.jsx$/, loader: 'jsx-loader' }
         ]
     }
 };

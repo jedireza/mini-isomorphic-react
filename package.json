@@ -4,7 +4,7 @@
   "description": "The world's smallest isomorphic React demo.",
   "main": "server.js",
   "scripts": {
-    "start": "webpack --config config/webpack.js && node server",
+    "start": "webpack --config config/webpack.js & nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "jsx-loader": "^0.12.2",
+    "nodemon": "^1.3.7",
     "webpack": "^1.6.0"
   }
 }
