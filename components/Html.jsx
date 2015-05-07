@@ -10,7 +10,7 @@ module.exports = React.createClass({
                     <div id="app-mount"
                         dangerouslySetInnerHTML={{ __html: this.props.markup }}>
                     </div>
-                    <script
+                    <script id="app-state"
                         dangerouslySetInnerHTML={{ __html: this.props.state }}>
                     </script>
                     <script src="/assets/client.js"></script>
